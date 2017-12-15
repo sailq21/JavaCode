@@ -31,27 +31,33 @@ public class Mytime {
     }
     public  void addHour(int hour){
         this.hour +=hour;
+        this.hour %=24;
     }
     public  void subHour(int hour){
         this.hour -=hour;
+        this.hour %=24;
     }
     public int getMinute(){
         return minute;
     }
     public void addMinute(int minute){
         this.minute+=minute;
+        this.minute %=60;
     }
     public void subMinute(int minute){
         this.minute-=minute;
+        this.minute %=60;
     }
     public int getSecond(){
         return second;
     }
     public void addSecond(int second){
         this.second +=second;
+        this.second %=60;
     }
     public void subSecond(int second){
         this.second -=second;
+        this.second %=60;
     }
     public void display(){
         System.out.println("时间： "+hour+":"+minute+":"+second);
@@ -60,7 +66,7 @@ public class Mytime {
     public static void main(String[] args) {
         Mytime mytime = new Mytime(16,14,30);
         mytime.display();
-        mytime.addHour(5);
+        mytime.addHour(50);
         mytime.display();
     }
 }
