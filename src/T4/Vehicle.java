@@ -44,5 +44,7 @@ public class Vehicle {
         vechi.display();
         vechi.speedup();
         vechi.display();
+        vechi.speedup();
+        vechi.display();
     }
 }
