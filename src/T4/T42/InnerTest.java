@@ -9,7 +9,5 @@ public class InnerTest {
         //静态内部类
         Outer.Inner2 inner2 = new Outer.Inner2();
         inner2.display();
-
-
     }
 }
